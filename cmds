@@ -1,0 +1,24 @@
+https://blog.logrocket.com/build-electron-app-electron-vite/
+
+
+npm create vite@latest image-filter-app -- --template react
+cd image-filter-app
+
+# to implement web user interface:
+npm install @mui/material @mui/icons-material @emotion/react @emotion/styled
+
+# to implement image filter capability:
+npm install react-image-filter
+
+npm run dev
+
+npm install electron electron-vite --save-dev
+
+"scripts": {
+    "dev": "electron-vite dev -w",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview"
+},
+
+
+electron.vite.config.js
